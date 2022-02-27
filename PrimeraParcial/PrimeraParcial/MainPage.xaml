@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeraParcial.MainPage">
+
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Frame BackgroundColor="#FFD936" 
+               AbsoluteLayout.LayoutBounds="0.5,-0.1,1,0.35"
+               AbsoluteLayout.LayoutFlags="All"
+               CornerRadius="30" />
+
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0.5,0.25,0.85,0.40"
+                        AbsoluteLayout.LayoutFlags="All">
+            <Frame BackgroundColor="White" 
+                   CornerRadius="15"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All" />
+            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         AbsoluteLayout.LayoutFlags="All"
+                         Spacing="0"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Frame CornerRadius="100" 
+                       HeightRequest="90"
+                       WidthRequest="90"
+                       HorizontalOptions="Center"
+                       Padding="0"
+                       Margin="0,0,0,20"
+                       IsClippedToBounds="True">
+                    <Image Source="natasya.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Natasya Anie" FontSize="30" FontAttributes="Bold" TextColor="#707070" HorizontalTextAlignment="Center"  />
+                <Label Text="Teacher" FontSize="20" HorizontalTextAlignment="Center" TextColor="#B1B1B1" Margin="0,0,0,10" />
+                <Button Text="Connect"
+                        TextColor="#8F8E55"
+                        FontSize="18"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                        BackgroundColor="#FBE154"
+                        BorderRadius="15"
+                        BorderWidth="0"
+                        HorizontalOptions="Center"/>
+                <Label Text="Teacher at Suka Makmur High School, good and funny teacher" 
+                       WidthRequest="240"
+                       FontSize="18" 
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10,0,0"
+                       TextColor="#B1B1B1" />
+            </StackLayout>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0.5,0.82,0.85,0.3"
+                        AbsoluteLayout.LayoutFlags="All">
+            <Frame BackgroundColor="White" 
+                   CornerRadius="15"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All" />
+            <StackLayout Orientation="Horizontal"
+                         AbsoluteLayout.LayoutBounds="0,0,1,0.3"
+                         AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Class" FontSize="30" FontAttributes="Bold" VerticalTextAlignment="Center" Margin="20,0,0,0"  />
+                <Image Source="dots.png" WidthRequest="5" HorizontalOptions="EndAndExpand" Margin="0,0,20,0"/>
+            </StackLayout>
+            <Frame AbsoluteLayout.LayoutBounds="0,0.3,1,0.001" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Gray" />
+            <StackLayout AbsoluteLayout.LayoutBounds="0,1,1,0.7"
+                         AbsoluteLayout.LayoutFlags="All"
+                         VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="20,0,0,0">
+                    <Frame CornerRadius="100" 
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           HorizontalOptions="Center"
+                           Padding="0"
+                           IsClippedToBounds="True">
+                        <Image Source="socialscience.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <StackLayout Margin="15,0,0,0">
+                        <Label Text="Social Science" VerticalOptions="Center" FontSize="20" />
+                        <Label Text="32 Student" VerticalOptions="Center" FontSize="16" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="20,20,0,0">
+                    <Frame CornerRadius="100" 
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           HorizontalOptions="Center"
+                           Padding="0"
+                           IsClippedToBounds="True">
+                        <Image Source="relationshipadvice.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <StackLayout Margin="15,0,0,0">
+                        <Label Text="Relationship Advice" VerticalOptions="Center" FontSize="20" />
+                        <Label Text="26 Student" VerticalOptions="Center" FontSize="16" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+
+</ContentPage>
